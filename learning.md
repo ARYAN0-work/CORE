@@ -54,3 +54,40 @@ Git commands = muscle memory
 Commits = save points
 
 GitHub = public proof
+
+What U and A mean in git status
+🟥 U → Untracked
+
+File exists but git is NOT tracking it
+
+Happens when you:
+
+create a new file
+
+copy a file into the repo
+
+➡️ Fix:
+
+git add filename
+
+🟩 A → Added (staged)
+
+File is marked to be included in next commit
+
+Git is now tracking it
+
+➡️ Happens after:
+
+git add .
+
+One-line mental model
+
+U = “git doesn’t know this file yet”
+
+A = “git will save this file in the next snapshot”
+
+Flow in one line
+New file → U → git add → A → git commit → saved forever
+
+
+That’s it.
